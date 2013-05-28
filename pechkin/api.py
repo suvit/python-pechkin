@@ -8,7 +8,7 @@ class PechkinApi(object):
     def __init__(self, username, password):
         self._client = requests.Session()
         self._client.auth = (username, password)
-        self._client.params = {'format': 'json')
+        self._client.params = {'format': 'json'}
 
     def lists_get(self, list_id):
         kwargs['method'] = 'lists.get'
