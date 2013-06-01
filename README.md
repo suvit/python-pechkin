@@ -17,5 +17,5 @@ pechkin API: http://pechkin-mail.ru/?page=api
 
     plist = api.lists_get(list_id)
 
-    plist.add_member(email='vsafronovich@gmail.com')
+    member_id = plist.add_member(email='vsafronovich@gmail.com')
 
