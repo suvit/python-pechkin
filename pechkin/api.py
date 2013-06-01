@@ -179,7 +179,6 @@ reports.geo
 class PechkinList(object):
     def __init__(self, api, id, data=None):
         self.id = id
-        self.data = data
 
         for method in ['get', 'update', 'delete',
                        'get_members', 'add_member',
@@ -188,7 +187,8 @@ class PechkinList(object):
             setattr(self, method, partial(api_method, list_id=self.id))
 
         if data is None:
-            self.data = self.get(raw=True)
+            data = self.get(raw=True)
+        self.data = data
 
     def __getattr__(self, name):
         try:
