@@ -1,7 +1,7 @@
 python-pechkin
 ==============
 
-Интеграция pechkin-mail.ru и вашего приложения
+Интеграция http://pechkin-mail.ru и вашего приложения
 
 pechkin API: http://pechkin-mail.ru/?page=api
 
